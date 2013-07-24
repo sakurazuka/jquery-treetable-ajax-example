@@ -9,10 +9,10 @@ class NodesController < ApplicationController
     render layout: false
   end
 
-  def update
-    @node = Node.find(params[:id].to_i)
-    @node.update_attributes(params[:node])
+  # def update
+  #   @node = Node.find(params[:id].to_i)
+  #   @node.update_attributes(params[:node])
 
-    render text: ""
-  end
+  #   render text: ""
+  # end
 end
