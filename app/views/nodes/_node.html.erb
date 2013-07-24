@@ -1,3 +1,6 @@
+<%# parent_id = アドレスにハイフンがあればその前まで、なければ"" %>
+<%# kind = EngineComponent.count(レベルがnode.bom_level＋１、アドレスにnode.item_addressを含む、engine_no=current) ? "directory" : "file" %>
+
 <tr data-tt-id="<%= node.id %>" data-tt-parent-id="<%= node.parent_id %>" data-tt-branch="<%= node.kind == "directory" ? "true" : "false" %>">
   <td>
     <span class="<%= node.kind %>"><%= node.name %></span>
